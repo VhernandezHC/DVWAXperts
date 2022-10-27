@@ -3,3 +3,16 @@ version: v1
 id:
   org: 133298bd-3a6d-4bf6-887f-e656f53e3ce0
   app: fa65b9e9-1662-4a11-92f4-89f9f0c72caf
+  
+scanners:
+ - sast
+ - dast
+ - secret
+ - sca
+ - iac
+ - container
+dast:
+  url: http://a3b5f6fa7f04b42efbab9bf6a4957daf-1095409182.us-east-1.elb.amazonaws.com:8081
+  fortipentest_scanner: false #true|false
+  full_scan: true #true|false
+
